@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+:root {
+    --cor-cabecalho : #8e7cc3;
+    --cor-item-1 : #6AA84F;
+    --cor-item-2 : #6FA8DC;
+    --cor-item-3 : #F6B26B;
+    --cor-rodape: #999999;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-size:large;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--cor-cabecalho);
+    height: 60px;
+    color: white;
+}
+.logo button{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    padding: 8px 15px;
+
+    cursor: pointer;
+}
+button{
+    border-color: var(--cor-cabecalho);
+    border-radius: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    justify-content: flex-end;
+}
+ul > li{
+    display: inline;
+    border-right: 1px solid white;
+}
+a{
+    color: white;
+}
+#ultimo{
+    border-right: none;
+}
+main{
+    padding: 200px;
+  }
+.Caixa{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+.item{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: large;
+    text-align: center;
+    color: black;
+}
+.item-1{
+    background-color: var(--cor-item-1);
+}
+.item-2{
+    background-color: var(--cor-item-2);
+}
+.item-3{
+    background-color: var(--cor-item-3);
+}
+footer{
+    background-color: var(--cor-rodape);
+    padding-bottom: 1px;
+    height: 60px;
+    justify-content: end;
+}
